@@ -15,5 +15,13 @@ test('get gym by id', async t => {
     let db = t.context.db;
     t.is(typeof db.getGym, 'function', 'getGym is function');
     let result = await db.getGym();
-    t.pass();
+    t.is(typeof result, 'object', 'result is an object');
+});
+
+test('get gyms', async t => {
+  let db = t.context.db;
+  t.is(typeof db.getGyms, 'function', 'getGyms is function');
+  let result = await db.getGyms();
+  t.is(typeof result, 'object', 'result is an object');
+  t.is(result.length, 10);
 });

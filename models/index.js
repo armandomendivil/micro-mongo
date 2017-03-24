@@ -12,6 +12,14 @@ class Model {
 		}
 		return result;
 	}
+
+	async find(query, params) {
+		const result = await this.db.collection(this.name).find(query).limit(params.limit).toArray();
+		if (!result) {
+			throw new Error('Db find error');
+		} 
+		return result;
+	}
 }
  
 module.exports = Model;
