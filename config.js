@@ -2,9 +2,9 @@
 
 const config = {
   db: {
-    host: process.env.host,
-    port: process.env.port,
-    db: process.env.db,
+    host: process.env.host || 'localhost',
+    port: process.env.port || 27017,
+    db: process.env.db || 'test',
   }
 }
 
