@@ -1,18 +1,25 @@
 {
-  "name": "microservice",
+  "name": "micro-mongo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armandomendivil/micro-mongo.git"
   },
   "keywords": [],
   "author": "Armando Mendivil <armandomendivil.m@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "mongodb": "2.2.25"
+  "bugs": {
+    "url": "https://github.com/armandomendivil/micro-mongo/issues"
   },
-  "devDependencies": {
-    "ava": "0.18.2"
+  "homepage": "https://github.com/armandomendivil/micro-mongo#readme",
+  "dependencies": {
+    "bluebird": "3.5.0",
+    "mongoose": "4.9.3",
+    "mongoose-middleware": "1.0.0"
   }
 }
